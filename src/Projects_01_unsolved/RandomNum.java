@@ -6,15 +6,6 @@ import java.util.Scanner;
 public class RandomNum {
 
 	/*
-	 * Given a positive integer num name is max ,
-	 * 
-	 * create a random number between 0 to max
-	 * 
-	 * output should be int
-	 * 
-	 */
-
-	/*
 	 * 
 	 * Veri tipi integer olan max sayisi verildiginde
 	 * 
@@ -30,14 +21,12 @@ public class RandomNum {
 		System.out.print("bir sasyi giriniz : ");
 		int max = scanner.nextInt();
 
-		// code Start here don't change before this line
-		// kodu burdan baslatin ve bu satirdan onceki kodlari degistirmeyin
-
 		for (int i = 0; i < 1; i++) { // 1 tane uretecek (ne kadar uretmesini istiyorsak)
 
 			Random rnd = new Random();
 
 			System.out.print(rnd.nextInt(max) + "\t"); // 0 ile max arasinda rastgele sayi uretecek
 		}
+	scanner.close();
 	}
 }

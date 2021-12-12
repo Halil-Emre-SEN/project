@@ -5,16 +5,6 @@ import java.util.Scanner;
 
 public class RandomNumberBetweenTwoNumbers {
 
-	/*
-	 * Given two positive integer numbers
-	 * 
-	 * integer 1 is min integer 2 is max
-	 * 
-	 * create a random number between min and max
-	 * 
-	 * output should be int
-	 * 
-	 */
 
 	/*
 	 * İki tane pozitif integer sayısı verildiğinde
@@ -39,11 +29,21 @@ public class RandomNumberBetweenTwoNumbers {
 		int min = Integer.parseInt(elements[0]);
 		int max = Integer.parseInt(elements[1]);
 
-		// code Start here don't change before this line
-		// kodu burdan başlatın ve bu satırdan önceki kodlari değiştirmeyin
-
-		int randomInRange = min + (int) (Math.random() * ((max - min) + 1));
-		System.out.println(randomInRange);
-
+		Random r=new Random();							//rastgele sayı bulmak için Random classından 2 yöntemimiz var
+		int rastgele= r.nextInt(max-min)+min;			//1.si r.nextInt(int)>>> bu methodla 0'dan başlayarak parantez içinde belirttiğimiz sayıya kadar olan sayılar arasından
+		System.out.println(rastgele);					//rastgele bir sayı çağırıyor. 2 sayı arasından sayı çağırmak için ise <<<int rastgele= r.nextInt(max-min)+min;>>> kodunu kullanmamız gerekiyor.
+														//örneğin: 20-30 arasında bir sayı bulabilmemiz için bakmamız gereken sayı 10 tanedir(30-20) yani (max-min), ilk önce 0 dan 10 a kadar olan sayılardan 
+														//bir rastgele sayı bulacağız((r.nextInt(int) ile) ve bu sayının 20 ile 30 arasında olması için 20(yani "min") ekleyeceğiz.
+        
+				
+		/*int randomInRange=min+(int)(Math.random()*((max-min)+1));		//2. yöntem Math.random() kullanarak rastgele sayı bulmak: bu method bize 0 ile 1 arasında rastgele bir double sayı verir.
+        System.out.println(randomInRange);								//bu yöntemde de Math.random()'u "(max-min)+1" ile çarparak sayının alabileceği değerlerin genişliğini belirliyoruz 
+		 */																//ve "min" sayıyı ekleyerek istediğimiz rastgele sayıyı elde etmiş oluyoruz.	
+																
+															//NOT: Biren fazla sayı üretmek istiyorsak başına for döngüsü oluştururuz.
+		
+		
+		
+scanner.close();
 	}
 }

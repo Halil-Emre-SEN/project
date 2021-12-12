@@ -5,14 +5,6 @@ import java.util.Scanner;
 public class twoString {
 
 	public static void main(String[] args) {
-
-		/*
-		 * Given two string by using scanner class and add each other if first word last
-		 * letter is same with second word first letter then remove one of them.
-		 * 
-		 * Example: "abc", "cat" --> "abcat" "abc", "dog" -->"abcdog"
-		 */
-
 		/*
 		 * Scanner class kullanilarak verilen iki tane Stringi birbirlerine ekle .
 		 * 
@@ -35,7 +27,12 @@ public class twoString {
 
 		// code start here use s1 and s2 as words
 		// kodu burdan baslatin ve s1 ve s2 kelime olarak kullanin
+		if(s1.substring(s1.length()-1).equals(s2.substring(0,1))) {
+			System.out.println(s1+s2.substring(1));
+		}
+		else {System.out.println(s1+s2);}
 
 		
-	}
+		dp.close();
+}
 }

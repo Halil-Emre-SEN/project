@@ -4,20 +4,7 @@ import java.util.Scanner;
 
 public class age {
 
-	/*
-	 * Given a int , if the age less then and equal 10 print too young to create a
-	 * facebook account
-	 * 
-	 * if the age less then and equal 16 print too young to get a driver's license
-	 * 
-	 * if the age less then and equal 18 print too young to get a tattoo
-	 * 
-	 * if the age less then and equal 21 print too young to drink alcohol
-	 * 
-	 * if the age bigger or equal to 21 print do what ever you want to do
-	 * 
-	 * Note: use if else statement.
-	 */
+	
 
 	/*
 	 * Eger age 10 dan kucuk veya esit ise facebook hesabi acmak icin cok gencsin
@@ -40,6 +27,17 @@ public class age {
 		int myAge = scanner.nextInt();
 
 		// kodu burdan baslatin ve bu satirdan onceki kodlari degistirmeyin
-
+		if(myAge<=10) {
+				System.out.println("facebook hesabi acmak icin cok gencsin");
+		}else if(myAge<=16) {
+				System.out.println("ehliyet almak icin cok gencsin");
+		}else if(myAge<=18) {
+				System.out.println("dovme yaptirmak icin cok gencsin");
+		}else if(myAge<=21) {
+				System.out.println("alkol icmek icin cok gencsin");
+		}else {
+				System.out.println("istedigini yapabilirsin");
+		}
+scanner.close();
 	}
 }

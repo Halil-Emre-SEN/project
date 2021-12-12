@@ -5,20 +5,9 @@ import java.util.Scanner;
 public class checkNumberEven {
 
 	/*
-	 * Given an int check the number is even or not
-	 * 
-	 * if the number is even print true
-	 * 
-	 * if the number is odd print false
-	 * 
-	 * result should be true or false.
-	 * 
-	 */
-
-	/*
 	 * Veri tipi int olan number verildiginde, number cift mi tek mi kontrol et
 	 * 
-	 * Eğer number cift ise print true
+	 * Eï¿½er number cift ise print true
 	 * 
 	 * Eger number tek ise print false
 	 * 
@@ -34,7 +23,9 @@ public class checkNumberEven {
 
 		// code Start here don't change before this line
 		// Kodu burdan baslatin ve bu satirdan onceki kodlari degistirmeyin
-
+		System.out.println(number%2==0);
+		
+		scanner.close();
 	}
 
 }

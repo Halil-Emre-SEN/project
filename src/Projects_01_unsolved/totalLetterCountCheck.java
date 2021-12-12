@@ -3,13 +3,6 @@ package Projects_01_unsolved;
 import java.util.Scanner;
 
 public class totalLetterCountCheck {
-
-	/*
-	 * Given a String , if the count of the letter in the String is odd print true
-	 * else print false
-	 * 
-	 */
-
 	/*
 	 * Bir String verildiginde
 	 * 
@@ -26,5 +19,8 @@ public class totalLetterCountCheck {
 		// code Start here don't change before this line
 		// kodu burdan baslatin ve bu satirdan onceki kodlari degistirmeyin
 		
-	}
+		System.out.println(word.length()%2==0? false : true);
+		
+		scanner.close();
+}
 }
