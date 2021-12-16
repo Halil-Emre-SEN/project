@@ -24,7 +24,7 @@ public class RandomNumberBetweenTwoNumbers {
 
 		String s1 = scanner.nextLine();
 
-		String[] elements = s1.split(" ");
+		String[] elements = s1.split(" ");											
 
 		int min = Integer.parseInt(elements[0]);
 		int max = Integer.parseInt(elements[1]);
